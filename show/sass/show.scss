@@ -1,0 +1,443 @@
+@charset "UTF-8";
+$num:75;
+.all{
+  width:750/$num+rem;
+  height:4750/$num+rem;
+  background-color: #e9e9e9;
+  position: relative;
+}
+//1.顶部banner部分开始
+.top_banner{
+  width:100%;
+  height:340/$num+rem;
+  background: url("../images/banner.png") no-repeat bottom center #fff;
+  background-size:1058/$num+rem 481/$num+rem;
+  overflow: hidden;
+  position:relative;
+  .search{
+    height:46/$num+rem;
+    width:702/$num+rem;
+    padding:0 24/$num+rem;
+    position: absolute;
+    left:0;
+    top:14%;
+    //border:1px solid red;
+    .address{
+      font-size:20/$num+rem;
+      color:#fff;
+      float:left;
+      width:120/$num+rem;
+      height:42/$num+rem;
+      line-height:42/$num+rem;
+      text-align: center;
+      background-color: #ab4804;
+      border-radius: 16/$num+rem;
+      margin-right:18/$num+rem;
+      span{
+        margin:0 8/$num+rem;
+        .img_span1{
+          height:28/$num+rem;
+          width:22/$num+rem;
+        }
+        .img_span2{
+          height:10/$num+rem;
+          width:7/$num+rem;
+        }
+      }
+    }
+    .button1{
+      float:left;
+      width:406/$num+rem;
+      height:42/$num+rem;
+      padding:0 26/$num+rem 0 48/$num+rem;
+      background-color: #fff;
+      font-size:20/$num+rem;
+      color:#c0c0c0;
+      text-align:left;
+      border-radius: 16/$num+rem;
+      line-height:42/$num+rem;
+      position: relative;
+      .ico_search{
+        position: absolute;
+        left:3%;
+        top:2%;
+        img{
+          height:22/$num+rem;
+          width:23/$num+rem;
+        }
+      }
+      .ico_voice{
+        position: absolute;
+        right:3%;
+        top:2%;
+        img{
+          height:24/$num+rem;
+          width:20/$num+rem;
+        }
+      }
+    }
+    .ico_logo{
+      float:right;
+      line-height:42/$num+rem;
+      span{
+        margin-right:14/$num+rem;
+      }
+      img{
+        height:29/$num+rem;
+        width:28/$num+rem;
+      }
+    }
+  }
+}
+//1.顶部banner部分结束
+
+//2.分类部分开始
+.classify{
+  width:702/$num+rem;
+  padding:0 24/$num+rem;
+  //height:473/$num+rem;
+  height:498/$num+rem;
+  background:#fff;
+  overflow: hidden;
+  //box-shadow: 0 12px 24px #ccc;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 1px 0 rgba(255,255,255,.3);
+  .classify_logo{
+    height:398/$num+rem;
+    width:100%;
+    margin-top:25/$num+rem;
+    .classify-ul{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      text-align:center;
+      li{
+        width:175/$num+rem;
+        color:#1c1c1c;
+        font-size:24/$num+rem;
+        p{
+          margin:10/$num+rem 0 45/$num+rem 0;
+        }
+        img{
+          width:100/$num+rem;
+          height:100/$num+rem;
+        }
+      }
+    }
+  }
+  .mrxb{
+    height:74/$num+rem;
+    width:100%;
+    border-top:1px solid #eaeaea;
+    color:#1c1c1c;
+    font-size:24/$num+rem;
+    line-height:74/$num+rem;
+    span{
+      color:#65a032;
+      font-size:28/$num+rem;
+      margin-right:30/$num+rem;
+      display: inline-block;
+      float:left;
+      img{
+        width:29/$num+rem;
+        height:33/$num+rem;
+        margin-right:8/$num+rem;
+      }
+    }
+    .scroll_gonggao{
+      float:left;
+      overflow: hidden;
+      height:50/$num+rem;
+      //border:1px solid red;
+      margin-top:11/$num+rem;
+      line-height: 50/$num+rem;
+      li{
+        margin-top:0;
+      }
+    }
+  }
+}
+//2.分类部分结束
+
+//3.限时抢购部分开始
+.time_limit{
+  width:702/$num+rem;
+  padding:0 24/$num+rem;
+  background-color: #fff;
+  margin-top:20/$num+rem;
+  //box-shadow: 0 12px 24px #ccc;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 1px 0 rgba(255,255,255,.3);
+  height:368/$num+rem;
+  .limit_shop{
+    height:69/$num+rem;
+    border-bottom:1px solid #eaeaea;
+    overflow: hidden;
+    line-height:69/$num+rem;
+    .xsqg{
+      font-size:34/$num+rem;
+      color:#65a032;
+      float:left;
+      span{
+        display: inline-block;
+        height:35/$num+rem;
+        width:12/$num+rem;
+        background-color: #65a032;
+        margin-right:12/$num+rem;
+      }
+    }
+    .time_shop{
+      float:right;
+      font-size:24/$num+rem;
+      color:#f96004;
+      i{
+        display: inline-block;
+        color:#fefefe;
+        font-size:22/$num+rem;
+        height:38/$num+rem;
+        width:38/$num+rem;
+        border-radius: 50%;
+        background-color: #f96004;
+        line-height:38/$num+rem;
+        text-align:center;
+        margin:0 5/$num+rem;
+      }
+    }
+  }
+  .product{
+    width:100%;
+    height:299/$num+rem;
+    overflow: hidden;
+    position:relative;
+    //background-color: #ffccdd;
+    .product-ul{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      text-align:center;
+      position: absolute;
+      left:0;
+      top:0;
+      li{
+        //width:27%;
+        width:200/$num+rem;
+        height:280/$num+rem;
+        margin-right:25/$num+rem;
+        padding-top:20/$num+rem;
+        p{
+          color:#767676;
+          font-size:28/$num+rem;
+          text-align:left;
+        }
+        del{
+          color:#767676;
+          font-size:24/$num+rem;
+          text-align:left;
+          display: block;
+        }
+        span{
+          color:#f96004;
+          font-size:28/$num+rem;
+          display: block;
+          text-align:left;
+        }
+      }
+      li:first-child img{
+        width:187/$num+rem;
+        height:123/$num+rem;
+        margin-top:33/$num+rem;
+      }
+      li:nth-child(2) img{
+        width:101/$num+rem;
+        height:156/$num+rem;
+      }
+      li:nth-child(3) img{
+        width:154/$num+rem;
+        height:122/$num+rem;
+        margin-top:34/$num+rem;
+      }
+      li:nth-child(4) img{
+        width:187/$num+rem;
+        height:123/$num+rem;
+        margin-top:33/$num+rem;
+      }
+      li:nth-child(5) img{
+        width:101/$num+rem;
+        height:156/$num+rem;
+      }
+      li:nth-child(6) img{
+        width:154/$num+rem;
+        height:122/$num+rem;
+        margin-top:34/$num+rem;
+      }
+    }
+  }
+}
+//3.限时抢购部分结束
+
+//4.猜你喜欢开始
+.cnxh{
+  width:750/$num+rem;
+  //padding:0 24/$num+rem;
+  background-color: #fff;
+  margin-top:20/$num+rem;
+  //box-shadow: 0 12px 24px #ccc;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 1px 0 rgba(255,255,255,.3);
+  height:978/$num+rem;
+  .cnxh_title{
+    height:88/$num+rem;
+    width:100%;
+    background: url("../images/cnxh_banner1.png") no-repeat top center;
+    background-size:750/$num+rem 88/$num+rem;
+  }
+  .qsgc{
+    height:260/$num+rem;
+    width:100%;
+    background: url("../images/qsgc_banner.png") no-repeat top center;
+    background-size:750/$num+rem 260/$num+rem;
+  }
+  .gzhh{
+    height:260/$num+rem;
+    width:100%;
+    background: url("../images/gzhh_banner.png") no-repeat top center;
+    background-size:750/$num+rem 260/$num+rem;
+  }
+}
+.cnxh_product{
+  height:370/$num+rem;
+  width:702/$num+rem;
+  padding:0 24/$num+rem;
+  .fresh-ul{
+    display: flex;
+    justify-content: space-between;
+    li{
+      color:#767676;
+      img{
+        height:194/$num+rem;
+        width:213/$num+rem;
+      }
+      p{
+        font-size:28/$num+rem;
+        margin-top:13/$num+rem;
+      }
+      span{
+        font-size:24/$num+rem;
+        display: block;
+        margin-top:20/$num+rem;
+      }
+      i{
+        display: block;
+        font-size:28/$num+rem;
+        color:#f96004;
+        margin-top:25/$num+rem;
+      }
+    }
+  }
+}
+//4.猜你喜欢结束
+
+//5.当季推荐开始
+.djtj{
+  width:750/$num+rem;
+  //padding:0 24/$num+rem;
+  background-color: #fff;
+  margin-top:20/$num+rem;
+  //box-shadow: 0 12px 24px #ccc;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 1px 0 rgba(255,255,255,.3);
+  height:978/$num+rem;
+  .djtj_title{
+    height:88/$num+rem;
+    width:100%;
+    background: url("../images/djtj_banner.png") no-repeat top center;
+    background-size:750/$num+rem 88/$num+rem;
+  }
+  .xxnlp{
+    height:260/$num+rem;
+    width:100%;
+    background: url("../images/xxnlp_banner.png") no-repeat top center;
+    background-size:750/$num+rem 260/$num+rem;
+  }
+  .ljcx{
+    height:260/$num+rem;
+    width:100%;
+    background: url("../images/ljcx_banner.png") no-repeat top center;
+    background-size:750/$num+rem 260/$num+rem;
+  }
+}
+//5.当季推荐结束
+
+//6.大家都在买部分开始
+.djdzm{
+  width:750/$num+rem;
+  background-color: #fff;
+  margin-top:20/$num+rem;
+  //box-shadow: 0 12px 24px #ccc;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 1px 0 rgba(255,255,255,.3);
+  height:1364/$num+rem;
+  .djdzm_banner{
+    height:114/$num+rem;
+    width:100%;
+    background: url("../images/djdzm_banner.png") no-repeat top center;
+    background-size:750/$num+rem 114/$num+rem;
+  }
+  .bargain_product{
+    height:1250/$num+rem;
+    width:750/$num+rem;
+    //padding:0 24/$num+rem;
+    .bargain-ul{
+      height:1250/$num+rem;
+      width:750/$num+rem;
+      li{
+        border-bottom:1px solid #eaeaea;
+        padding:0 24/$num+rem;
+        width:702/$num+rem;
+        height:250/$num+rem;
+        position:relative;
+        .bargain_left{
+          float:left;
+          margin-right:66/$num+rem;
+          img{
+            height:178/$num+rem;
+            width:272/$num+rem;
+            margin-top:35/$num+rem;
+          }
+        }
+        .show_right{
+          float:left;
+          padding-top:35/$num+rem;
+          .car_posi{
+            height:49/$num+rem;
+            width:49/$num+rem;
+            background: url("../images/cart-orange.png") no-repeat;
+            background-size:49/$num+rem 49/$num+rem;
+            position: absolute;
+            right:30/$num+rem;
+            bottom:10/$num+rem;
+          }
+          p{
+            color:#1c1c1c;
+            font-size:34/$num+rem;
+            margin-bottom:33/$num+rem;
+          }
+          span{
+            display: block;
+            color:#676767;
+            font-size:26/$num+rem;
+            margin-bottom:35/$num+rem;
+          }
+          em{
+            display: block;
+            color:#f96004;
+            font-size:28/$num+rem;
+            i{
+              font-size:34/$num+rem;
+            }
+          }
+        }
+      }
+      li:last-child{
+        border:none;
+      }
+    }
+  }
+}
+//6.大家都在买部分结束
+

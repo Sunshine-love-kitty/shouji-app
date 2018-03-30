@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/show.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script>
+        var pixelRatio = 1 / window.devicePixelRatio;   //还原设备的真实分辨率；
+        //devicePixelRatio设备的像素比；
+        document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+        var html=document.getElementsByTagName('html')[0];
+        var pageWidth=html.getBoundingClientRect().width;
+        html.style.fontSize=pageWidth/10+"px";
+    </script>
+</head>
+<body>
+<div class="all">
+<!--1.顶部banner部分开始-->
+    <div class="top_banner">
+        <div class="search">
+            <div class="address"><span><img src="images/location_light.png" class="img_span1"></span>合肥<span><img src="images/right.png" class="img_span2"></span></div>
+            <div class="button1">
+                澳洲进口牛奶
+                <div class="ico_search"><img src="images/search.png"></div>
+                <div class="ico_voice"><img src="images/voice.png"></div>
+            </div>
+            <div class="ico_logo"><span><img src="images/scan.png"></span><img src="images/message.png"></div>
+        </div>
+    </div>
+<!--1.顶部banner部分结束-->
+    <script>
+        $(function(){
+            $(document).scroll(function(){
+                var y=$(document).scrollTop();
+                console.log(y);
+                if(y>=400){
+                    $('.search').css({'position':'fixed','top':'3%','z-index':'9999'});
+                }
+            })
+        })
+    </script>
+
+<!--2.分类部分开始-->
+    <div class="classify">
+        <div class="classify_logo">
+            <ul class="classify-ul">
+                <li>
+                    <img src="images/classify_logo1.png">
+                    <p>新鲜蔬果</p>
+                </li>
+                <li>
+                    <img src="images/classify_logo2.png">
+                    <p>海鲜水产</p>
+                </li>
+                <li>
+                    <img src="images/classify_logo3.png">
+                    <p>肉禽蛋类</p>
+                </li>
+                <li>
+                    <img src="images/classify_logo4.png">
+                    <p>缤纷水果</p>
+                </li>
+                <li>
+                    <img src="images/classify_logo5.png">
+                    <p>面包烘焙</p>
+                </li>
+                <li>
+                    <img src="images/classify_logo6.png">
+                    <p>鲜奶饮品</p>
+                </li>
+                <li>
+                    <img src="images/classify_logo7.png">
+                    <p>今日特价</p>
+                </li>
+                <li>
+                    <img src="images/classify_logo8.png">
+                    <p>优品生活</p>
+                </li>
+            </ul>
+        </div>
+        <div class="mrxb">
+            <span><img src="images/creative(1).png">每日鲜报</span>
+            <div class="scroll_gonggao">
+                <ul class="scroll_gonggao-ul">
+                    <li>越南大青芒39.9包邮/2+1斤>></li>
+                    <li>海南柠檬39.9包邮/2+1斤>></li>
+                    <li>新疆哈密瓜39.9包邮/2+1斤>></li>
+                    <li>萧县大葡萄39.9包邮/2+1斤>></li>
+                    <li>砀山大梨39.9包邮/2+1斤>></li>
+                    <li>越南大青芒39.9包邮/2+1斤>></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+<!--2.分类部分结束-->
+    <script>
+        var n = 0;
+        $(function(){
+            var ht=$(".scroll_gonggao-ul").html()+$(".scroll_gonggao-ul").html();
+            $(".scroll_gonggao-ul").html(ht);
+            $(".scroll_gonggao-ul").mouseover(function(){
+                clearInterval(timer);
+            });
+
+            $(".scroll_gonggao-ul").mouseleave(function(){
+                timer = setInterval(fun,100);
+            });
+
+            var timer = setInterval(fun,100);
+
+            function fun(){
+                n--;
+                if(Math.abs(n)>=$(".scroll_gonggao-ul").width()/2){
+                    n=0;
+                    n--;
+                }
+                $(".scroll_gonggao-ul").css("margin-top",2*n);
+            }
+        })
+    </script>
+
+<!--3.限时抢购部分开始-->
+    <div class="time_limit">
+        <div class="limit_shop">
+            <div class="xsqg"><span></span>限时抢购</div>
+            <div class="time_shop"><i>01</i>:<i>07</i>:<i>25</i></div>
+        </div>
+        <div class="product" id="product">
+            <ul class="product-ul">
+                <li>
+                    <img src="images/product1.png">
+                    <p>赣南脐橙1kg</p>
+                    <del>¥29</del>
+                    <span>￥19</span>
+                </li>
+                <li>
+                    <img src="images/product2.png">
+                    <p>有机青菜4kg</p>
+                    <del>¥28</del>
+                    <span>￥16.5</span>
+                </li>
+                <li>
+                    <img src="images/product3.png">
+                    <p>智利樱桃1kg</p>
+                    <del>¥49.9</del>
+                    <span>￥29.9</span>
+                </li>
+                <li>
+                    <img src="images/product1.png">
+                    <p>赣南脐橙1kg</p>
+                    <del>¥29</del>
+                    <span>￥19</span>
+                </li>
+                <li>
+                    <img src="images/product2.png">
+                    <p>有机青菜4kg</p>
+                    <del>¥28</del>
+                    <span>￥16.5</span>
+                </li>
+                <li>
+                    <img src="images/product3.png">
+                    <p>智利樱桃1kg</p>
+                    <del>¥49.9</del>
+                    <span>￥29.9</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+<!--3.限时抢购部分结束-->
+    <!--滚动栏-->
+    <script>
+        var product = document.getElementById("product");
+        var ul=product.children[0];
+        var num=0;
+        timer=setInterval(autoPlay,15);
+        function autoPlay(){
+            num--;
+            num<=-450 ? num=0 : num;
+            ul.style.left=num+"px";
+        }
+        product.onmouseover=function(){
+            clearInterval(timer);
+        }
+        product.onmouseout=function(){
+            timer=setInterval(autoPlay,15);
+        }
+    </script>
+
+<!--4.猜你喜欢开始-->
+<div class="cnxh">
+    <div class="cnxh_title"></div>
+    <div class="qsgc"></div>
+    <div class="gzhh"></div>
+    <div class="cnxh_product">
+        <ul class="fresh-ul">
+            <li>
+                <img src="images/fresh1.png">
+                <p>新疆无籽葡萄</p>
+                <span>1份约500g</span>
+                <i>￥18.5</i>
+            </li>
+            <li>
+                <img src="images/fresh2.png">
+                <p>有机现摘番茄</p>
+                <span>一份约657g</span>
+                <i>￥32.9</i>
+            </li>
+            <li>
+                <img src="images/fresh3.png">
+                <p>当日新鲜河虾</p>
+                <span>1份约500g</span>
+                <i>￥42.5</i>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--4.猜你喜欢结束-->
+
+<!--5.当季推荐开始-->
+    <div class="djtj">
+        <div class="djtj_title"></div>
+        <div class="ljcx"></div>
+        <div class="xxnlp"></div>
+        <div class="cnxh_product">
+            <ul class="fresh-ul">
+                <li>
+                    <img src="images/fresh4.png">
+                    <p>现摘新鲜包菜</p>
+                    <span>1份约1kg</span>
+                    <i>￥9.9</i>
+                </li>
+                <li>
+                    <img src="images/fresh5.png">
+                    <p>鲷鱼片罗非鱼</p>
+                    <span>一份约275g</span>
+                    <i>￥19.9</i>
+                </li>
+                <li>
+                    <img src="images/fresh6.png">
+                    <p>农家有机玉米</p>
+                    <span>1份约500g</span>
+                    <i>￥8.9</i>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!--5.当季推荐结束-->
+
+<!--6.大家都在买部分开始-->
+    <div class="djdzm">
+        <div class="djdzm_banner"></div>
+        <div class="bargain_product">
+            <ul class="bargain-ul">
+                <li>
+                    <div class="bargain_left"><img src="images/bargain_product1.png"></div>
+                    <div class="show_right">
+                        <p>越南红心火龙果</p>
+                        <span>个大爽口，清新甜蜜</span>
+                        <em>¥ <i>69.9/</i>5kg</em>
+                        <div class="car_posi"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bargain_left"><img src="images/bargain_product2.png"></div>
+                    <div class="show_right">
+                        <p>美国进口牛肉</p>
+                        <span>肉质新鲜，口感滑嫩</span>
+                        <em>¥ <i>59.9/</i>2kg</em>
+                        <div class="car_posi"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bargain_left"><img src="images/bargain_product3.png"></div>
+                    <div class="show_right">
+                        <p>青田谷园现摘草莓</p>
+                        <span>现摘新鲜，鲜嫩多汁</span>
+                        <em>¥ <i>39.9/</i>1.5kg</em>
+                        <div class="car_posi"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bargain_left"><img src="images/bargain_product4.png"></div>
+                    <div class="show_right">
+                        <p>正宗农家五谷杂粮</p>
+                        <span>颗颗饱满，健康养生</span>
+                        <em>¥ <i>46.5/</i>4kg</em>
+                        <div class="car_posi"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bargain_left"><img src="images/bargain_product5.png"></div>
+                    <div class="show_right">
+                        <p>澳大利亚新鲜脐橙</p>
+                        <span>高糖低酸，皮薄易剥</span>
+                        <em>¥ <i>36.9/</i>2.5kg</em>
+                        <div class="car_posi"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!--6.大家都在买部分结束-->
+
+<!--7.尾部导航开始-->
+<div class="bottom_nav">
+	<ul class="botnav-ul">
+		<li>
+            <img src="images/ico_house_green.png">
+            <a href="#" class="special">首页</a>
+        </li>
+		<li>
+            <img src="images/ico_classify.png">
+            <a href="../classify/classify.html">分类</a>
+        </li>
+		<li>
+            <img src="images/ico_store.png">
+            <a href="../store_details/store_details.html">门店</a>
+        </li>
+		<li>
+            <img src="images/ico_mine.png">
+            <a href="#">我的</a>
+        </li>
+	</ul>
+</div>
+<!--7.尾部导航结束-->
+</div>
+</body>
+</html>

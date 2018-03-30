@@ -1,0 +1,65 @@
+@charset "UTF-8";
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0;}
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+body{font-family:"微软雅黑","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;}
+a{color:#2d374b;text-decoration:none}
+a:hover{color:#cd0200;text-decoration:underline}
+em,i{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+/*清除浮动方法*/
+.clearfix:before,.clearfix:after {
+  content:"";
+  display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+  *zoom:1;/*IE/7/6*/
+}
+//$beishu:1.44;
+//$num:75*$beishu;
+$num:75;
+body{
+  /*perspective: 1000px;*/
+  font-size: 16/$num+rem;
+}
+*{
+  margin:0;
+  padding:0;
+}
+//7.尾部导航开始
+.bottom_nav{
+  height:100/$num+rem;
+  width:750/$num+rem;
+  background:#fff;
+  padding-top: 18/$num+rem;
+  position:absolute;
+  bottom:0;
+  left:0;
+  .botnav-ul{
+    display: flex;
+    justify-content: space-around;
+    li{
+      img{
+        height:48/$num+rem;
+        width:48/$num+rem;
+      }
+    }
+    a{
+      font-size:20/$num+rem;
+      color:#515151;
+      display: block;
+      text-align:center;
+      margin-top:10/$num+rem;
+    }
+    a:hover{
+      color:#65a032;
+    }
+    .special{
+      color:#65a032;
+    }
+  }
+}
+//7.尾部导航结束
