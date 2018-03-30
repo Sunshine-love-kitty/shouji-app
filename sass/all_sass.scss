@@ -1,0 +1,188 @@
+@charset "UTF-8";
+$num:75;
+//第一页开始
+.all_one{
+  width:750/$num+rem;
+  height:1334/$num+rem;
+  background:url("../images/img1_bg.png") no-repeat;
+  background-size:750/$num+rem 1334/$num+rem;
+  position: relative;
+  overflow: hidden;
+  .circle{
+    position: absolute;
+    left:17%;
+    top:21%;
+    z-index: 1;
+    img{
+      width:480/$num+rem;
+      height:480/$num+rem;
+    }
+  }
+  .friut1{
+    position: absolute;
+    left:18.8%;
+    top:22.2%;
+    z-index: 10;
+    img{
+      width:483/$num+rem;
+      height:450/$num+rem;
+    }
+  }
+  .sun{
+    position: absolute;
+    left:21.2%;
+    top:0;
+    img{
+      width:82/$num+rem;
+      height:200/$num+rem;
+    }
+  }
+  .top_cloud{
+    position: absolute;
+    left:62.8%;
+    top:0;
+    img{
+      width:258/$num+rem;
+      height:428/$num+rem;
+    }
+  }
+}
+.cloud_bottom1{
+  position: absolute;
+  bottom:0;
+  img{
+    width:1235/$num+rem;
+    height:227/$num+rem;
+  }
+}
+.cloud_bottom2{
+  position: absolute;
+  bottom:10%;
+  img{
+    width:1200/$num+rem;
+    height:138/$num+rem;
+  }
+}
+.bottom_page1{
+  position: absolute;
+  left:40%;
+  bottom:1.8%;
+  img{
+    width:128/$num+rem;
+    height:14/$num+rem;
+  }
+}
+.text1-1{
+  position: absolute;
+  left:26%;
+  bottom:20.2%;
+  z-index: 2;
+  img{
+    width:444/$num+rem;
+    height:226/$num+rem;
+  }
+}
+//第一页结束
+
+//第二页开始
+.all_two{
+  width:750/$num+rem;
+  height:1334/$num+rem;
+  background:url("../images/img2_bg.png") no-repeat;
+  background-size:750/$num+rem 1334/$num+rem;
+  position: relative;
+  overflow: hidden;
+  .earth{
+    position:absolute;
+    left:11%;
+    top:16%;
+    z-index: 1;
+    img{
+      width:583/$num+rem;
+      height:577/$num+rem;
+    }
+  }
+  .friut2{
+    position:absolute;
+    left:16%;
+    top:23%;
+    z-index: 10;
+    img{
+      width:482/$num+rem;
+      height:287/$num+rem;
+    }
+  }
+}
+//第二页结束
+
+//第三页开始
+.all_three{
+  width:750/$num+rem;
+  height:1334/$num+rem;
+  background:url("../images/img3_bg.png") no-repeat;
+  background-size:750/$num+rem 1334/$num+rem;
+  position: relative;
+  overflow: hidden;
+  .clouds{
+    position: absolute;
+    right:0;
+    top:10.9589%;
+    z-index: 1;
+    img{
+      width:675/$num+rem;
+      height:590/$num+rem;
+    }
+  }
+  .feiji{
+    position: absolute;
+    right:3%;
+    top:22%;
+    z-index: 1;
+    img{
+      width:712/$num+rem;
+      height:417/$num+rem;
+    }
+  }
+  .friut3{
+    position: absolute;
+    right:13%;
+    top:19%;
+    z-index: 1;
+    img{
+      width:616/$num+rem;
+      height:386/$num+rem;
+    }
+  }
+}
+//第三页结束
+
+//第四页开始
+.all_four{
+  width:750/$num+rem;
+  height:1334/$num+rem;
+  background:url("../images/img4_bg.png") no-repeat;
+  background-size:750/$num+rem 1334/$num+rem;
+  position: relative;
+  overflow: hidden;
+  .friut4{
+    position: absolute;
+    right:12%;
+    top:10%;
+    z-index: 10;
+    img{
+      width:557/$num+rem;
+      height:649/$num+rem;
+    }
+  }
+  .house{
+      position: absolute;
+      right:22%;
+      top:27%;
+      z-index: 1;
+      img{
+        width:399/$num+rem;
+        height:380/$num+rem;
+      }
+    }
+}
+//第四页结束

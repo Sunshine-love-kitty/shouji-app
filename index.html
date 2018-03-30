@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>引导页</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/all_sass.css">
+    <script>
+        var pixelRatio = 1 / window.devicePixelRatio;   //还原设备的真实分辨率；
+        //devicePixelRatio设备的像素比；
+        document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+        var html=document.getElementsByTagName('html')[0];
+        var pageWidth=html.getBoundingClientRect().width;
+        html.style.fontSize=pageWidth/10+"px";
+    </script>
+</head>
+<body>
+            <!--第一页开始-->
+            <div class="all_one">
+                <div class="friut1 animated tada"><img src="images/img1_friut1-1.png"></div>
+                <div class="circle animated bounce"><img src="images/img1_cricle.png"></div>
+                <div class="cloud_bottom1 animated fadeInLeftBig"><img src="images/img_cloud_bottom.png"></div>
+                <div class="cloud_bottom2 animated fadeInRightBig"><img src="images/img_cloud_bottom2.png"></div>
+                <div class="sun animated swing"><img src="images/img1_sun.png"></div>
+                <div class="top_cloud animated swing"><img src="images/img1_cloud.png"></div>
+                <div class="text1-1 animated bounceInDown"><img src="images/img1_text.png"></div>
+                <div class="bottom_page1 animated fadeInUp"><a href="page2.html"><img src="images/img1_bottom.png"></a></div>
+            </div>
+            <!--第一页结束-->
+            <script>
+                // $(".sun img").addClass("animated swing").show(3000);
+                // $(".top_cloud img").addClass("animated swing");
+                $(function(){
+                    $(".sun img").addClass("animated swing").show(3000);
+                    $(".top_cloud img").addClass("animated swing");
+                })
+            </script>
+            
+</body>
+</html>

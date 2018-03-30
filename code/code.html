@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scan a QR Code</title>
+    <link rel="stylesheet" type="text/css" href="css/code.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <script>
+        var pixelRatio = 1 / window.devicePixelRatio;   //还原设备的真实分辨率；
+        //devicePixelRatio设备的像素比；
+
+        document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+        var html=document.getElementsByTagName('html')[0];
+        var pageWidth=html.getBoundingClientRect().width;
+        html.style.fontSize=pageWidth/10+"px";
+    </script>
+    <!--
+        1.固定定位元素内容中有input，会导致触发键盘之后导致固定定位错位；
+
+    -->
+</head>
+<body>
+<div class="bg-big"></div>
+<div class="mc-code">
+    <div class="top-code">
+        <p>若好友购买此套餐，你可以赚取 零钱<i>￥99</i></p>
+        <img src="images/code.png">
+    </div>
+    <div class="bot-code">
+        <div class="all-logo">
+            <ul class="al-ul">
+                <li><img src="images/qq.png">QQ</li>
+                <li><img src="images/weixin.png">微信好友</li>
+                <li><img src="images/renren.png">朋友圈</li>
+                <li><img src="images/weibo.png">微博</li>
+            </ul>
+        </div>
+        <div class="bot-txt"><img src="images/ico-分享-复制链接.png">复制商品连接</div>
+    </div>
+</div>
+<div class="tanchu"><a href="../store_details/store_details.html"><img src="images/ico-弹出-关闭.png"></a></div>
+</body>
+</html>

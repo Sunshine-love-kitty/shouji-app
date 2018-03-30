@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图文详情</title>
+    <link rel="stylesheet" type="text/css" href="css/detail.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <script>
+        var pixelRatio = 1 / window.devicePixelRatio;   //还原设备的真实分辨率；
+        //devicePixelRatio设备的像素比；
+
+    document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+    var html=document.getElementsByTagName('html')[0];
+    var pageWidth=html.getBoundingClientRect().width;
+    html.style.fontSize=pageWidth/10+"px";
+    </script>
+    <!--
+        1.固定定位元素内容中有input，会导致触发键盘之后导致固定定位错位；
+    -->
+</head>
+<body>
+<div class="mc-twxq">
+    <div class="mc-twxqtit">
+        <ul class="twxq-ul">
+            <li><img src="images/ico-back.png"></li>
+            <li>图文详情</li>
+            <li><img src="images/ico-more.png"></li>
+        </ul>
+    </div>
+    <div class="mc-baimei"><img src="images/bigbanner1.png"></div>
+    <div class="mc-baimei2"><img src="images/bigbanner3.png"></div>
+    <div class="mc-baimei3"><img src="images/bigbanner4.png"></div>
+    <div class="mc-lijqg"><a href="../store_details/store_details.html">立即抢购</a></div>
+</div>
+</body>
+</html>

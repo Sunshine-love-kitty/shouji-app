@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分类</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/classify.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script>
+        var pixelRatio = 1 / window.devicePixelRatio;   //还原设备的真实分辨率；
+        //devicePixelRatio设备的像素比；
+        document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+        var html=document.getElementsByTagName('html')[0];
+        var pageWidth=html.getBoundingClientRect().width;
+        html.style.fontSize=pageWidth/10+"px";
+    </script>
+</head>
+<body>
+<div class="all">
+    <!--1.顶端导航开始-->
+    <div class="top_navs">
+        <div class="search_find">
+            <div class="button_top">进口车厘子 29.9限价秒杀</div>
+            <div class="ico_find"><img src="images/ico_sousuo.png"></div>
+            <div class="ico_voice"><img src="images/ico_yuyin.png"></div>
+        </div>
+        <ul class="freshpro-ul">
+            <li><img src="images/img_xinxian1.png"></li>
+            <li><img src="images/img_xinxian2.png"></li>
+            <li><img src="images/img_xinxian3.png"></li>
+        </ul>
+    </div>
+    <!--1.顶端导航结束-->
+    <script>
+        $(function(){
+            $(document).scroll(function(){
+                var y=$(document).scrollTop();
+                console.log(y);
+                if(y>=400){
+                    $('.search_find').css({'position':'fixed','z-index':'9999'})
+                }
+            })
+        })
+    </script>
+
+    <!--2.产品栏开始-->
+    <div class="various_product">
+        <ul class="various-ul">
+            <li>
+                <p>缤纷水果</p>
+                <span>Fresh Fruits</span>
+                <img src="images/pro_imgs1.png">
+            </li>
+            <li>
+                <p>肉类禽蛋</p>
+                <span>Meats & Eggs</span>
+                <img src="images/pro_imgs2.png">
+            </li>
+            <li>
+                <p>海鲜水产</p>
+                <span>Seafood</span>
+                <img src="images/pro_imgs3.png">
+            </li>
+            <li>
+                <p>新鲜果蔬</p>
+                <span>Vegetables</span>
+                <img src="images/pro_imgs4.png">
+            </li>
+            <li>
+                <p>面包烘培</p>
+                <span>Bread Baeking</span>
+                <img src="images/pro_imgs5.png">
+            </li>
+            <li>
+                <p>鲜奶饮品</p>
+                <span>Milk Drinks</span>
+                <img src="images/pro_imgs6.png">
+            </li>
+            <li>
+                <p>速食调料</p>
+                <span>Fast Food</span>
+                <img src="images/pro_imgs7.png">
+            </li>
+            <li>
+                <p>炒货干果</p>
+                <span>Fried & Nets</span>
+                <img src="images/pro_imgs8.png">
+            </li>
+        </ul>
+    </div>
+    <!--2.产品栏结束-->
+    <script>
+        $(function(){
+            $('.various-ul li:odd').css('border-bottom','1px solid #e9e9e9');
+            $('.various-ul li:even').css({
+                'border-bottom':'1px solid #e9e9e9',
+                'border-right':'1px solid #e9e9e9'
+            });
+        })
+    </script>
+
+    <!--7.尾部导航开始-->
+    <div class="bottom_nav">
+        <ul class="botnav-ul">
+            <li>
+                <img src="images/ico_house.png">
+                <a href="../show/show.html">首页</a>
+            </li>
+            <li>
+                <img src="images/ico_classify_green.png">
+                <a href="#" class="special">分类</a>
+            </li>
+            <li>
+                <img src="images/ico_store.png">
+                <a href="../store_details/store_details.html">门店</a>
+            </li>
+            <li>
+                <img src="images/ico_mine.png">
+                <a href="#">我的</a>
+            </li>
+        </ul>
+    </div>
+    <!--7.尾部导航结束-->
+
+</div>
+</body>
+</html>

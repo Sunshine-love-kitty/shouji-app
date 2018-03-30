@@ -1,0 +1,150 @@
+.all_one {
+  width: 10rem;
+  height: 17.78667rem;
+  background: url("../images/img1_bg.png") no-repeat;
+  background-size: 10rem 17.78667rem;
+  position: relative;
+  overflow: hidden; }
+  .all_one .circle {
+    position: absolute;
+    left: 17%;
+    top: 21%;
+    z-index: 1; }
+    .all_one .circle img {
+      width: 6.4rem;
+      height: 6.4rem; }
+  .all_one .friut1 {
+    position: absolute;
+    left: 18.8%;
+    top: 22.2%;
+    z-index: 10; }
+    .all_one .friut1 img {
+      width: 6.44rem;
+      height: 6rem; }
+  .all_one .sun {
+    position: absolute;
+    left: 21.2%;
+    top: 0; }
+    .all_one .sun img {
+      width: 1.09333rem;
+      height: 2.66667rem; }
+  .all_one .top_cloud {
+    position: absolute;
+    left: 62.8%;
+    top: 0; }
+    .all_one .top_cloud img {
+      width: 3.44rem;
+      height: 5.70667rem; }
+
+.cloud_bottom1 {
+  position: absolute;
+  bottom: 0; }
+  .cloud_bottom1 img {
+    width: 16.46667rem;
+    height: 3.02667rem; }
+
+.cloud_bottom2 {
+  position: absolute;
+  bottom: 10%; }
+  .cloud_bottom2 img {
+    width: 16rem;
+    height: 1.84rem; }
+
+.bottom_page1 {
+  position: absolute;
+  left: 40%;
+  bottom: 1.8%; }
+  .bottom_page1 img {
+    width: 1.70667rem;
+    height: 0.18667rem; }
+
+.text1-1 {
+  position: absolute;
+  left: 26%;
+  bottom: 20.2%;
+  z-index: 2; }
+  .text1-1 img {
+    width: 5.92rem;
+    height: 3.01333rem; }
+
+.all_two {
+  width: 10rem;
+  height: 17.78667rem;
+  background: url("../images/img2_bg.png") no-repeat;
+  background-size: 10rem 17.78667rem;
+  position: relative;
+  overflow: hidden; }
+  .all_two .earth {
+    position: absolute;
+    left: 11%;
+    top: 16%;
+    z-index: 1; }
+    .all_two .earth img {
+      width: 7.77333rem;
+      height: 7.69333rem; }
+  .all_two .friut2 {
+    position: absolute;
+    left: 16%;
+    top: 23%;
+    z-index: 10; }
+    .all_two .friut2 img {
+      width: 6.42667rem;
+      height: 3.82667rem; }
+
+.all_three {
+  width: 10rem;
+  height: 17.78667rem;
+  background: url("../images/img3_bg.png") no-repeat;
+  background-size: 10rem 17.78667rem;
+  position: relative;
+  overflow: hidden; }
+  .all_three .clouds {
+    position: absolute;
+    right: 0;
+    top: 10.9589%;
+    z-index: 1; }
+    .all_three .clouds img {
+      width: 9rem;
+      height: 7.86667rem; }
+  .all_three .feiji {
+    position: absolute;
+    right: 3%;
+    top: 22%;
+    z-index: 1; }
+    .all_three .feiji img {
+      width: 9.49333rem;
+      height: 5.56rem; }
+  .all_three .friut3 {
+    position: absolute;
+    right: 13%;
+    top: 19%;
+    z-index: 1; }
+    .all_three .friut3 img {
+      width: 8.21333rem;
+      height: 5.14667rem; }
+
+.all_four {
+  width: 10rem;
+  height: 17.78667rem;
+  background: url("../images/img4_bg.png") no-repeat;
+  background-size: 10rem 17.78667rem;
+  position: relative;
+  overflow: hidden; }
+  .all_four .friut4 {
+    position: absolute;
+    right: 12%;
+    top: 10%;
+    z-index: 10; }
+    .all_four .friut4 img {
+      width: 7.42667rem;
+      height: 8.65333rem; }
+  .all_four .house {
+    position: absolute;
+    right: 22%;
+    top: 27%;
+    z-index: 1; }
+    .all_four .house img {
+      width: 5.32rem;
+      height: 5.06667rem; }
+
+/*# sourceMappingURL=all_sass.css.map */
